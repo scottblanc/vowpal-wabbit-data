@@ -1,0 +1,17 @@
+Simple utility class for parsing and vectorizing vowpal wabbit data in python.
+
+Vowpal wabbit format has a few very nice properties:
+  * handles text and non-text very naturally
+  * groups features by namespace
+  * stores meta data, like importance weight and tags
+
+This class tries to maintain fidelity for these properties and in addition:
+  * allows for easy slicing and dicing of the data by leveraging pandas
+  * supports direct extraction of large, sparse feature matrices grouped by namespace 
+  * support simple feature pruning
+  * pass-through processing of text using scipy text analyzers
+
+To see it in action, type "python example.py".
+
+
+
